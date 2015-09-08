@@ -17,7 +17,12 @@ The github repo is https://github.com/vanetprivacy/hooper.git
 to tweak this code on your own, create cloud9 account and install mono, 
   microsoft's linux version of visual studio, then clone the repo
 
+VGT.cs must be compiled from same directory as you run it...
+mcs /reference:System.Data.dll /reference:System.Xml.Linq.dll /reference:System.Drawing.dll 
+/reference:System.Windows.Forms.dll VGT.cs
+
 *** INSTRUCTIONS TO PROGRAMMER ***
 The following things need to be done but aren't yet...
 create 10% of cars at beginning and other 90% distributed over 2000 sec
 create 10% of vehicles inside and 90% on edge/border
+
